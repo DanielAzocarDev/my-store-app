@@ -1,0 +1,11 @@
+.home {
+  height: 100vh;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    width: 90vw;
+    height: 55vh;
+    margin: 0 auto;
+  }
+}
