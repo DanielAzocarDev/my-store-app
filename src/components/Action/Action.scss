@@ -1,0 +1,32 @@
+.action {
+  background: #FFFFFF;
+  border-radius: 25px;
+  box-shadow: 6px 8px 12px 1px rgb(0 0 0 / 10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 10px 10px 10px 20px;
+
+  &__title {
+    font-size: 32px;
+    letter-spacing: 0.02rem;
+  }
+
+  &__description {
+    font-size: 14px;
+    letter-spacing: 0.07rem;
+    line-height: 1rem;
+  }
+
+  &__button {
+    background: #E1FCD9;
+    border: none;
+    border-radius: 15px;
+    color: #39E614;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 0 10px 10px 0;
+  }
+}

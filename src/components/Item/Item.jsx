@@ -1,32 +1,30 @@
 import React from 'react'
+import sample from '../../assets/sample.jpg'
+
 
 import './Item.scss'
 export const Item = () => {
   return (
     <div className="item">
-      <h3>Item</h3>
-      <div className="data-container" >
-        <div>
-          <p>price</p>
-          <p>cost</p>
-          <p>units</p>
-        </div>
-        <div>
-          {/* <p>{price}</p>
-          <p>{cost}</p>
-          <p>{units}</p> */}
-        </div>
+      <div className='item__image__container'>
+        <img src={sample} className='item__image' />
       </div>
-      <div className="item-btns">
-        <button className="btn-delete" >
-          Delete
-        </button>
-        <button
-          className="btn-edit"
-
-        >
-          Edit
-        </button>
+      <div className='item__data'>
+        <h3 className='item__data__title'>Item Name</h3>
+        <div className='item__data__container'>
+          <div className='item__data__field'>
+            <h4 className='item__data__field__title'>Price</h4>
+            <p className='item__data__field__number'>$2.400</p>
+          </div>
+          <div className='item__data__field'>
+            <h4 className='item__data__field__title'>Cost</h4>
+            <p className='item__data__field__number'>$1.300</p>
+          </div>
+          <div className='item__data__field'>
+            <h4 className='item__data__field__title'>Units</h4>
+            <p className='item__data__field__number'>50</p>
+          </div>
+        </div>
       </div>
     </div>
   )
