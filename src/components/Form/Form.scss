@@ -1,0 +1,40 @@
+.form {
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+
+    &__label {
+
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0.07rem;
+      margin-bottom: 10px;
+    }
+
+    &__input{
+      background: #F2F2FC;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 15px;
+
+      &__error {
+        background: #FFD8DE;
+      border: none;
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    background: #E1FCD9;
+    border: none;
+    border-radius: 15px;
+    color: #40EB19;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 0 10px 10px 0;
+  }
+}

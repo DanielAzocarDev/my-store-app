@@ -1,0 +1,28 @@
+.metric {
+  min-width: 160px;
+  width: 350px;
+  height: 160px;
+  background: #FFFFFF;
+  border-radius: 25px;
+  box-shadow: 6px 8px 12px 1px rgb(0 0 0 / 10%);
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 10px 10px 10px 20px;
+
+  &__icon {
+    margin-top: 10px;
+    color: #706BF9;
+  }
+  
+  &__data {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 10px 0 0 0;
+  }
+  
+  &__description {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.07rem;
+  }
+}

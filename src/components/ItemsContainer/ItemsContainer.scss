@@ -1,0 +1,13 @@
+.items__container {
+
+  width: 70vw;
+  height: 55vh;
+  padding: 20px;
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
