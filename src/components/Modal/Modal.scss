@@ -10,11 +10,23 @@
 }
 
 .modal {
-  border: 1px solid green;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
-  background: #FFF;
+  width: 30vw;
+  background: #FFFFFF;
+  border-radius: 25px;
+  box-shadow: 6px 8px 12px 1px rgb(0 0 0 / 10%);
+  padding: 25px;
+
+  &__header {
+    display: flex;
+  }
+
+  &__title {
+    font-size: 32px;
+    letter-spacing: 0.02rem;
+    margin-top: 0;
+  }
 }

@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useDispatch } from 'react-redux'
+import { actionModalAddItem } from '../../store/slices/modals/modals'
 import { Modal } from '../Modal/Modal'
 
-
 import './Action.scss'
+
 export const Action = () => {
 
-  const [modal, setModal] = useState(false)
+  const dispatch = useDispatch()
+
   return (
     <div className='action'>
       <div>
@@ -14,9 +17,12 @@ export const Action = () => {
 
       </div>
 
-      <button className='action__button' onClick={() => setModal(!modal)}>add new product</button>
+      <button className='action__button' onClick={() => {
+        console.log('hola')
+        dispatch(actionModalAddItem())
+      }}>add new product</button>
 
-      <Modal open={modal} />
+      <Modal />
     </div>
   )
 }

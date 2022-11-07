@@ -1,5 +1,4 @@
 import React from 'react'
-import { Form } from '../../components/Form/Form'
 import { ActionsContainer } from '../../components/ActionsContainer/ActionsContainer'
 import { Item } from '../../components/Item/Item'
 import { ItemsContainer } from '../../components/ItemsContainer/ItemsContainer'
@@ -9,10 +8,12 @@ import { Navbar } from '../../components/Navbar/Navbar'
 
 import './Home.scss'
 import { Action } from '../../components/Action/Action'
+import { useSelector } from 'react-redux'
 
 export const Home = () => {
 
-  const data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  const products = useSelector((state) => state.items.items)
+
   return (
     <main className='home'>
       <Navbar />
@@ -31,7 +32,7 @@ export const Home = () => {
 
         <ItemsContainer>
           {
-            data.map(item => <Item dat={item} key={item.id} />)
+            products.map(product => <Item data={product} key={product.id} />)
           }
         </ItemsContainer>
       </div>

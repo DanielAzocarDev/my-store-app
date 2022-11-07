@@ -1,56 +1,40 @@
 .form {
-  width: 260px;
-  background: #fff;
-  padding: 20px;
-  margin: auto;
-  box-shadow: 8px 6px 12px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
-  box-sizing: border-box;
-  //border: 1px solid green;
-  h3 {
-    text-align: center;
-    margin: 0;
-  }
-  label {
-    display: block;
-    margin: 8px 0 5px 0;
-  }
-  input {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid grey;
-    padding: 3px 8px;
-    box-sizing: border-box;
-    outline: none;
-  }
-  button {
-    width: 100%;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 4px 0;
-    margin-top: 15px;
-    cursor: pointer;
-  }
 
-  .form-buttom {
-    background: #2eb951;
-    box-shadow: 4px 3px 6px 1px rgba(46, 185, 81, 0.39);
-    &:hover {
-      background: #208d3b;
+  &__field {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+
+    &__label {
+
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0.07rem;
+      margin-bottom: 10px;
+    }
+
+    &__input{
+      background: #F2F2FC;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 15px;
+
+      &__error {
+        background: #FFD8DE;
+      border: none;
+      }
     }
   }
 
-  .clear-buttom {
-    background: #41bcf5;
-    box-shadow: 4px 3px 6px 1px rgba(65, 188, 245, 0.39);
-    &:hover {
-      background: #349ccc;
-    }
-  }
-
-  input[type="number"]::-webkit-inner-spin-button,
-  input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
+  &__button {
+    width: 100%;
+    background: #E1FCD9;
+    border: none;
+    border-radius: 15px;
+    color: #40EB19;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 0 10px 10px 0;
   }
 }
