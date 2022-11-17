@@ -10,4 +10,10 @@
     margin: 0 auto;
     box-sizing: border-box;
   }
+
+  &__empty {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+  }
 }

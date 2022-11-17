@@ -32,7 +32,7 @@ export const Home = () => {
 
         <ItemsContainer>
           {
-            products.map(product => <Item data={product} key={product.id} />)
+            products.length > 0 ? products.map(product => <Item data={product} key={product.id} />) : <p className='home__empty'>No products</p>
           }
         </ItemsContainer>
       </div>
