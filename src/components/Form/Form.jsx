@@ -38,15 +38,16 @@ export const Form = () => {
     validate,
     onSubmit: values => {
 
-      const { title, price, cost, units } = values
+      const { title, price, cost, units, image } = values
 
       const item = {
         id: uuid(),
         title,
         price,
         cost,
-        units
+        units,
       }
+
       dispatch(addItem(item))
 
       dispatch(actionModalAddItem())
@@ -55,7 +56,6 @@ export const Form = () => {
 
   const dispatch = useDispatch()
 
-  console.log(formik.errors)
   return (
     <form className="form" onSubmit={formik.handleSubmit}>
       <div className='form__field'>
@@ -70,7 +70,7 @@ export const Form = () => {
         />
       </div>
       <div className='form__field'>
-        <label className='form__field__label' htmlFor="title">Price</label>
+        <label className='form__field__label' htmlFor="price">Price</label>
         <input
           className={!formik.errors.price ? 'form__field__input' : 'form__field__input form__field__input__error'}
           type="text"
@@ -81,7 +81,7 @@ export const Form = () => {
         />
       </div>
       <div className='form__field'>
-        <label className='form__field__label' htmlFor="title">Cost</label>
+        <label className='form__field__label' htmlFor="cost">Cost</label>
         <input
           className={!formik.errors.cost ? 'form__field__input' : 'form__field__input form__field__input__error'}
           type="text"
@@ -92,7 +92,7 @@ export const Form = () => {
         />
       </div>
       <div className='form__field'>
-        <label className='form__field__label' htmlFor="title">Units</label>
+        <label className='form__field__label' htmlFor="units">Units</label>
         <input
           className={!formik.errors.units ? 'form__field__input' : 'form__field__input form__field__input__error'}
           type="text"
@@ -102,6 +102,8 @@ export const Form = () => {
           value={formik.values.units}
         />
       </div>
+
+
 
 
       <button className="form__button" type='submit'>Create!</button>

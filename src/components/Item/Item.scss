@@ -28,6 +28,12 @@
     flex-direction: column;
     justify-content: space-between;
 
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
     &__title {
       font-size: 22px;
       letter-spacing: 0.02rem;
@@ -35,6 +41,16 @@
       color: #706BF9;
     }
 
+    &__more {
+      display: flex;
+      border-radius: 100%;
+      position: relative;
+
+      &:hover{
+        background: #cbcbd6;
+        cursor: pointer;
+      }
+    }
     &__description {
       font-size: 14px;
       letter-spacing: 0.07rem;
